@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http:www.thymeleaf.org">
+<body>
+
+<div class="container">
+
+    <form action="/members/new" method="post">
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+            <!-- 여기에서 name은 MemberController에 있는 create 메서드에서 form.getName()이 있는데 웹에서 입력한 값이 MemberForm에 있는 name으로감. -->
+              </div>
+              <button type="submit">등록</button>
+          </form>
+
+      </div> <!-- /container -->
+
+</body>
+</html>
+
